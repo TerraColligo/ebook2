@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+
+    <!-- Menu action: eBook Library eBooks -->
+    <record model="ir.actions.act_window" id="ebook_library.ebooks_list_action">
+      <field name="name">eBooks</field>
+      <field name="res_model">ebook_library.ebook</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="ebook_library.ebook_tree"/>
+    </record>
+
+    <!-- Menu action: eBook Library eBook Leads -->
+    <record model="ir.actions.act_window" id="ebook_library.ebook_leads_list_action">
+      <field name="name">eBook Leads</field>
+      <field name="res_model">ebook_library.lead</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="ebook_library.ebook_lead_tree"/>
+    </record>
+
+    <!-- Menu action: eBook Library CRM Leads -->
+    <record model="ir.actions.act_window" id="ebook_library.crm_leads_list_action">
+      <field name="name">CRM Leads</field>
+      <field name="res_model">crm.lead</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[("is_ebook_lead", "=", True)]</field>
+    </record>
+
+  </data>
+</odoo>

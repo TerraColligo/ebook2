@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_admin_ebook_library_ebook,ebook_library.ebook,model_ebook_library_ebook,ebook_library.admin_group,1,1,1,1
+access_admin_ebook_library_downloadable_file,ebook_library.downloadable_file,model_ebook_library_downloadable_file,ebook_library.admin_group,1,1,1,1
+access_admin_ebook_library_lead,ebook_library.lead,model_ebook_library_lead,ebook_library.admin_group,1,1,1,1

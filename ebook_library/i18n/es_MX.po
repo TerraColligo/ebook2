@@ -1,0 +1,400 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ebook_library
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-03 22:59+0000\n"
+"PO-Revision-Date: 2021-07-03 18:06-0500\n"
+"Last-Translator: Ossi Mäntylahti <ossi.mantylahti@terracolligo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: ebook_library
+#: model:mail.template,body_html:ebook_library.ebook_download_email
+msgid ""
+"\n"
+"    \n"
+"      <p>Hello ${object.name}!</p>\n"
+"      <p>You can download ${object.ebook.name} here:</p>\n"
+"        % for file in object.ebook.downloadable_files:\n"
+"        <p><a target=\"_blank\" rel=\"noopener\" href=\"${ctx.download_url}&file_id=${file.id}\">Download ${file.filename}</a></p>\n"
+"        % endfor\n"
+"    \n"
+"    "
+msgstr ""
+"\n"
+"    \n"
+"      <p>Estimado ${object.name}!</p>\n"
+"      <p>Usted puede descargar ${object.ebook.name} aquí:</p>\n"
+"        % for file in object.ebook.downloadable_files:\n"
+"        <p><a target=\"_blank\" rel=\"noopener\" href=\"${ctx.download_url}&file_id=${file.id}\">Descarga ${file.filename}</a></p>\n"
+"        % endfor\n"
+"    \n"
+"    "
+
+#. module: ebook_library
+#: model:mail.template,subject:ebook_library.ebook_download_email
+msgid "${object.ebook.name} Download Link"
+msgstr "${object.ebook.name} Enlace de descarga"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_needaction
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_needaction
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_needaction
+msgid "Action Needed"
+msgstr "Necesita acción"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_attachment_count
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_attachment_count
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_attachment_count
+msgid "Attachment Count"
+msgstr "Número de anexos"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__crm_lead
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "CRM Lead"
+msgstr "CRM lead"
+
+#. module: ebook_library
+#: model:ir.actions.act_window,name:ebook_library.crm_leads_list_action
+#: model:ir.ui.menu,name:ebook_library.crm_leads_list_menuitem
+msgid "CRM Leads"
+msgstr "CRM leads"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__content_type
+#: model_terms:ir.ui.view,arch_db:ebook_library.downloadable_file_form
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "Content Type"
+msgstr "Tipo de Contenido"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__create_uid
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__create_uid
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__create_date
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__create_date
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__create_date
+msgid "Created on"
+msgstr "Creado"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__display_name
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__display_name
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__downloadable_files
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "Downloadable Files"
+msgstr "Archivos Descargables"
+
+#. module: ebook_library
+#: model:ir.model,name:ebook_library.model_ebook_library_downloadable_file
+#: model_terms:ir.ui.view,arch_db:ebook_library.downloadable_file_form
+msgid "Downloadable eBook File"
+msgstr "Archivo de libro electrónico descargable"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__ebook_code
+msgid "Ebook Code"
+msgstr "Código del libro electrónico"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__email
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "Email"
+msgstr "Email"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__file
+#: model_terms:ir.ui.view,arch_db:ebook_library.downloadable_file_form
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "File"
+msgstr "Archivo"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__filename
+#: model_terms:ir.ui.view,arch_db:ebook_library.downloadable_file_form
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "Filename"
+msgstr "Nombre de archivo"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_follower_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_follower_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_channel_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_channel_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seguidores (canales)"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_partner_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_partner_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Partners)"
+
+#. module: ebook_library
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebooks
+msgid "HELLO"
+msgstr "HOLA"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__id
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__id
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__id
+msgid "ID"
+msgstr "Id"
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_needaction
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_unread
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_needaction
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_unread
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_needaction
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcado, los mensajes nuevos requieren su atención."
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_has_error
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_has_sms_error
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_has_error
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_has_sms_error
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_has_error
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_is_follower
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_is_follower
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_is_follower
+msgid "Is Follower"
+msgstr "Es seguidor"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_crm_lead__is_ebook_lead
+msgid "Is eBook Lead"
+msgstr "Es el eBook Lead"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file____last_update
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook____last_update
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__write_uid
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__write_uid
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__write_date
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__write_date
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__write_date
+msgid "Last Updated on"
+msgstr "Última actualización"
+
+#. module: ebook_library
+#: model:ir.model,name:ebook_library.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Iniciativa/Oportunidad"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_main_attachment_id
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_main_attachment_id
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Anexo principal"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_has_error
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_has_error
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_has_error
+msgid "Message Delivery error"
+msgstr "Error en la entrega del mensaje"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__name
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "Name"
+msgstr "Nombre"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_needaction_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_needaction_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_has_error_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_has_error_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_needaction_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_needaction_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_has_error_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_has_error_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_unread_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_unread_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leídos"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_has_sms_error
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_has_sms_error
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de entrega de SMS"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_unread
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_unread
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_unread
+msgid "Unread Messages"
+msgstr "Número de mensajes no leídos"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_unread_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_unread_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Número de mensajes no leídos"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__uuid
+msgid "Uuid"
+msgstr "Uuid"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__website_message_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__website_message_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__website_message_ids
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__website_message_ids
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__website_message_ids
+msgid "Website communication history"
+msgstr "Historia de la comunicación en la web"
+
+#. module: ebook_library
+#. openerp-web
+#: code:addons/ebook_library/static/src/xml/lead_form.xml:0
+#, python-format
+msgid "Your Email"
+msgstr "Tu correo electrónico"
+
+#. module: ebook_library
+#. openerp-web
+#: code:addons/ebook_library/static/src/xml/lead_form.xml:0
+#, python-format
+msgid "Your Name"
+msgstr "Su nombre"
+
+#. module: ebook_library
+#: model:ir.model,name:ebook_library.model_ebook_library_ebook
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__ebook
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__ebook
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "eBook"
+msgstr "libro electrónico"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__code
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "eBook Code"
+msgstr "código de libro electrónico"
+
+#. module: ebook_library
+#: model:ir.model,name:ebook_library.model_ebook_library_lead
+msgid "eBook Lead"
+msgstr "lead de libro electrónico"
+
+#. module: ebook_library
+#: model:ir.actions.act_window,name:ebook_library.ebook_leads_list_action
+#: model:ir.model.fields,field_description:ebook_library.field_crm_lead__ebook_leads
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__ebook_leads
+#: model:ir.ui.menu,name:ebook_library.ebook_leads_list_menuitem
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "eBook Leads"
+msgstr "leads de libros electrónicos"
+
+#. module: ebook_library
+#: model:ir.ui.menu,name:ebook_library.menu_root
+msgid "eBook Library"
+msgstr "biblioteca de libros electrónicos"
+
+#. module: ebook_library
+#: model:res.groups,name:ebook_library.admin_group
+msgid "eBook Library Admin"
+msgstr "Administración de la biblioteca de libros electrónicos"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__name
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "eBook Name"
+msgstr "nombre del libro electrónico"
+
+#. module: ebook_library
+#: model:ir.actions.act_window,name:ebook_library.ebooks_list_action
+#: model:ir.ui.menu,name:ebook_library.ebooks_list_menuitem
+msgid "eBooks"
+msgstr "libros electrónicos"
+
+#. module: ebook_library
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+#, fuzzy
+msgid "ebook_leads"
+msgstr "ebook_leads"

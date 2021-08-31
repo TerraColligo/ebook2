@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<odoo>
+  <template id="ebook_library.ebook_snippets" inherit_id="website.snippets" name="eBook Snippets">
+    <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
+      <t t-snippet="ebook_library.ebook_form_snippet" t-thumbnail="/ebook_library/static/src/img/icon.png"/>
+    </xpath>
+  </template>
+
+  <template id="assets_frontend" inherit_id="website.assets_frontend" name="eBook Snippets">
+    <xpath expr="." position="inside">
+      <link rel="stylesheet" href="/ebook_library/static/src/css/ebook-snippets.css" t-ignore="true"/>
+    </xpath>
+  </template>
+
+  <template id="ebook_library.ebook_form_snippet" name="eBook Form">
+    <section class="ebook-form-snippet">
+      <form action="/ebook_library/signup" method="post" class="container-fluid mt32" enctype="multipart/form-data">
+        <div class="container">
+          <div class="form-group row form-field">
+            <div class="col-lg-3 col-md-4">
+              <label class="col-form-label" for="email">Your Email</label>
+            </div>
+            <div class="col-lg-7 col-md-8">
+              <input type="text" class="form-control ebook_library_form_input" name="email" />
+            </div>
+          </div>
+
+          <div class="form-group row form-field">
+            <div class="col-lg-3 col-md-4">
+              <label class="col-form-label" for="name">Your Name</label>
+            </div>
+            <div class="col-lg-7 col-md-8">
+              <input type="text" class="form-control ebook_library_form_input" name="name" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </template>
+</odoo>

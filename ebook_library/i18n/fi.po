@@ -1,0 +1,399 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ebook_library
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-03 22:58+0000\n"
+"PO-Revision-Date: 2021-07-03 18:04-0500\n"
+"Last-Translator: Ossi Mäntylahti <ossi.mantylahti@terracolligo.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: fi\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: ebook_library
+#: model:mail.template,body_html:ebook_library.ebook_download_email
+msgid ""
+"\n"
+"    \n"
+"      <p>Hello ${object.name}!</p>\n"
+"      <p>You can download ${object.ebook.name} here:</p>\n"
+"        % for file in object.ebook.downloadable_files:\n"
+"        <p><a target=\"_blank\" rel=\"noopener\" href=\"${ctx.download_url}&file_id=${file.id}\">Download ${file.filename}</a></p>\n"
+"        % endfor\n"
+"    \n"
+"    "
+msgstr ""
+"\n"
+"    \n"
+"      <p>Hei ${object.name}!</p>\n"
+"      <p>Kiitos mielenkiinnostasi eKirjaa ${object.ebook.name} kohtaan. Voit ladata sähköisen kirjan täältä:</p>\n"
+"        % for file in object.ebook.downloadable_files:\n"
+"        <p><a target=\"_blank\" rel=\"noopener\" href=\"${ctx.download_url}&file_id=${file.id}\">Lataa ${file.filename}</a></p>\n"
+"        % endfor\n"
+"    \n"
+"    "
+
+#. module: ebook_library
+#: model:mail.template,subject:ebook_library.ebook_download_email
+msgid "${object.ebook.name} Download Link"
+msgstr "${object.ebook.name} Latauslinkki"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_needaction
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_needaction
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_needaction
+msgid "Action Needed"
+msgstr "Vaatii toimenpiteitä"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_attachment_count
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_attachment_count
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_attachment_count
+msgid "Attachment Count"
+msgstr "Liitteiden lukumäärä"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__crm_lead
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "CRM Lead"
+msgstr "CRM myyntimahdollisuus"
+
+#. module: ebook_library
+#: model:ir.actions.act_window,name:ebook_library.crm_leads_list_action
+#: model:ir.ui.menu,name:ebook_library.crm_leads_list_menuitem
+msgid "CRM Leads"
+msgstr "CRM myyntimahdollisuudet"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__content_type
+#: model_terms:ir.ui.view,arch_db:ebook_library.downloadable_file_form
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "Content Type"
+msgstr "Sisällön tyyppi"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__create_uid
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__create_uid
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__create_uid
+msgid "Created by"
+msgstr "Tekijä"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__create_date
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__create_date
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__create_date
+msgid "Created on"
+msgstr "Luontiaika"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__display_name
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__display_name
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__display_name
+msgid "Display Name"
+msgstr "Näytettävä nimi"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__downloadable_files
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "Downloadable Files"
+msgstr "Ladattavat tiedostot"
+
+#. module: ebook_library
+#: model:ir.model,name:ebook_library.model_ebook_library_downloadable_file
+#: model_terms:ir.ui.view,arch_db:ebook_library.downloadable_file_form
+msgid "Downloadable eBook File"
+msgstr "Ladattava e-kirjatiedosto"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__ebook_code
+msgid "Ebook Code"
+msgstr "eKirja-koodi"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__email
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "Email"
+msgstr "Sähköposti"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__file
+#: model_terms:ir.ui.view,arch_db:ebook_library.downloadable_file_form
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "File"
+msgstr "Tiedosto"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__filename
+#: model_terms:ir.ui.view,arch_db:ebook_library.downloadable_file_form
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "Filename"
+msgstr "Tiedostonimi"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_follower_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_follower_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_follower_ids
+msgid "Followers"
+msgstr "Seuraajat"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_channel_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_channel_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "Seuraajat (kanavat)"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_partner_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_partner_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seuraajat (Odoon kontakti-partnerit)"
+
+#. module: ebook_library
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebooks
+msgid "HELLO"
+msgstr "HEI"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__id
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__id
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__id
+msgid "ID"
+msgstr "Tunnus (ID)"
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_needaction
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_unread
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_needaction
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_unread
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_needaction
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Jos valittu, uudet viestit edellyttävät huomiota."
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_has_error
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_has_sms_error
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_has_error
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_has_sms_error
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_has_error
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Jos valittu, joillain viesteillä on virhe toimituksessa."
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_is_follower
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_is_follower
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_is_follower
+msgid "Is Follower"
+msgstr "On seuraaja"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_crm_lead__is_ebook_lead
+msgid "Is eBook Lead"
+msgstr "Onko eBook myyntimahdollisuus"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file____last_update
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook____last_update
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead____last_update
+msgid "Last Modified on"
+msgstr "Viimeksi muokattu"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__write_uid
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__write_uid
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__write_uid
+msgid "Last Updated by"
+msgstr "Viimeisin päivitys"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__write_date
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__write_date
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__write_date
+msgid "Last Updated on"
+msgstr "Viimeksi päivitetty"
+
+#. module: ebook_library
+#: model:ir.model,name:ebook_library.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Liidi/mahdollisuus"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_main_attachment_id
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_main_attachment_id
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Pääliite"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_has_error
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_has_error
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_has_error
+msgid "Message Delivery error"
+msgstr "Viestin toimituksen virhe"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_ids
+msgid "Messages"
+msgstr "Viestit"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__name
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "Name"
+msgstr "Nimi"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_needaction_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_needaction_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Toimenpiteiden määrä"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_has_error_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_has_error_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_has_error_counter
+msgid "Number of errors"
+msgstr "Virheiden määrä"
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_needaction_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_needaction_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Virheiden määrä, jotka vaativat toimenpiteitä"
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_has_error_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_has_error_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Viestien määrä, joilla on toimitusvirhe"
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__message_unread_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__message_unread_counter
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Lukemattomien viestien määrä"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_has_sms_error
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_has_sms_error
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Virhe tekstiviestin toimituksessa"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_unread
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_unread
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_unread
+msgid "Unread Messages"
+msgstr "Lukemattomia viestejä"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__message_unread_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__message_unread_counter
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Lukemattomien viestien määrä"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__uuid
+msgid "Uuid"
+msgstr "Uuid"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__website_message_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__website_message_ids
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__website_message_ids
+msgid "Website Messages"
+msgstr "Verkkosivun viestit"
+
+#. module: ebook_library
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_downloadable_file__website_message_ids
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_ebook__website_message_ids
+#: model:ir.model.fields,help:ebook_library.field_ebook_library_lead__website_message_ids
+msgid "Website communication history"
+msgstr "Verkkosivun viestihistoria"
+
+#. module: ebook_library
+#. openerp-web
+#: code:addons/ebook_library/static/src/xml/lead_form.xml:0
+#, python-format
+msgid "Your Email"
+msgstr "﻿Sähköpostiosoitteesi"
+
+#. module: ebook_library
+#. openerp-web
+#: code:addons/ebook_library/static/src/xml/lead_form.xml:0
+#, python-format
+msgid "Your Name"
+msgstr "Nimesi"
+
+#. module: ebook_library
+#: model:ir.model,name:ebook_library.model_ebook_library_ebook
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_downloadable_file__ebook
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_lead__ebook
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "eBook"
+msgstr "eKirja"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__code
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "eBook Code"
+msgstr "eKirja-koodi"
+
+#. module: ebook_library
+#: model:ir.model,name:ebook_library.model_ebook_library_lead
+msgid "eBook Lead"
+msgstr "eBook myyntimahdollisuus"
+
+#. module: ebook_library
+#: model:ir.actions.act_window,name:ebook_library.ebook_leads_list_action
+#: model:ir.model.fields,field_description:ebook_library.field_crm_lead__ebook_leads
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__ebook_leads
+#: model:ir.ui.menu,name:ebook_library.ebook_leads_list_menuitem
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "eBook Leads"
+msgstr "eBook myyntimahdollisuus"
+
+#. module: ebook_library
+#: model:ir.ui.menu,name:ebook_library.menu_root
+msgid "eBook Library"
+msgstr "eKirja-kirjasto"
+
+#. module: ebook_library
+#: model:res.groups,name:ebook_library.admin_group
+msgid "eBook Library Admin"
+msgstr "eKirja-kirjaston ylläpitäjä"
+
+#. module: ebook_library
+#: model:ir.model.fields,field_description:ebook_library.field_ebook_library_ebook__name
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "eBook Name"
+msgstr "eKirjan nimi"
+
+#. module: ebook_library
+#: model:ir.actions.act_window,name:ebook_library.ebooks_list_action
+#: model:ir.ui.menu,name:ebook_library.ebooks_list_menuitem
+msgid "eBooks"
+msgstr "sähköiset kirjat"
+
+#. module: ebook_library
+#: model_terms:ir.ui.view,arch_db:ebook_library.ebook_form
+msgid "ebook_leads"
+msgstr "ebook_leads"

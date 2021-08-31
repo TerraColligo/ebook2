@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="ebook_library.ebook_download_email" model="mail.template">
+    <field name="name">eBook Download Email</field>
+    <field name="email_from">${ctx.email_from}</field>
+    <field name="email_to">${object.email}</field>
+    <field name="subject">${object.ebook.name} Download Link</field>
+    <field name="model_id" ref="ebook_library.model_ebook_library_lead"/>
+    <field name="body_html">
+    <![CDATA[
+      <p>Hello ${object.name}!</p>
+      <p>You can download ${object.ebook.name} here:</p>
+        % for file in object.ebook.downloadable_files:
+        <p><a target="_blank" rel="noopener" href="${ctx.download_url}&file_id=${file.id}">Download ${file.filename}</a></p>
+        % endfor
+    ]]>
+    </field>
+  </record>
+</odoo>

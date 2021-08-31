@@ -1,0 +1,12 @@
+<odoo>
+  <data>
+    <!-- Top menu item -->
+    <menuitem name="eBook Library" id="ebook_library.menu_root" web_icon="ebook_library,static/description/icon.png"/>
+
+    <!-- Menu categories -->
+    <menuitem sequence="11" name="eBooks" id="ebook_library.ebooks_list_menuitem" parent="ebook_library.menu_root"  action="ebook_library.ebooks_list_action"/>
+    <menuitem sequence="12" name="eBook Leads" id="ebook_library.ebook_leads_list_menuitem" parent="ebook_library.menu_root"  action="ebook_library.ebook_leads_list_action"/>
+    <menuitem sequence="12" name="CRM Leads" id="ebook_library.crm_leads_list_menuitem" parent="ebook_library.menu_root"  action="ebook_library.crm_leads_list_action"/>
+
+  </data>
+</odoo>

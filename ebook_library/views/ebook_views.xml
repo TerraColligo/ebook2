@@ -1,0 +1,92 @@
+<odoo>
+  <data>
+
+    <!-- View for managing eBooks -->
+    <record model="ir.ui.view" id="ebook_library.ebook_tree">
+      <field name="name">ebook_library.ebook.tree</field>
+      <field name="model">ebook_library.ebook</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="code"/>
+          <field name="downloadable_files"/>
+          <field name="ebook_leads"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- View for creating/editing an eBook -->
+    <record model="ir.ui.view" id="ebook_library.ebook_form">
+      <field name="name">ebook_library.ebook.form</field>
+      <field name="model">ebook_library.ebook</field>
+      <field name="arch" type="xml">
+        <form string="eBook">
+          <sheet>
+            <group>
+              <field name="name" string="eBook Name"/>
+              <field name="code" string="eBook Code"/>
+            </group>
+            <group>
+              <field name="downloadable_files" string="Downloadable Files" widget="one2many" mode="tree,kanban">
+                <tree string="Downloadable Files">
+                  <field name="filename" string="Filename" readonly="1"/>
+                  <field name="content_type" string="Content Type"/>
+                  <field name="file" string="File"/>
+                </tree>
+              </field>
+            </group>
+            <group>
+              <field name="ebook_leads" string="eBook Leads" widget="one2many" mode="tree,kanban">
+                <tree string="ebook_leads">
+                  <field name="name" string="Name"/>
+                  <field name="email" string="Email"/>
+                  <field name="crm_lead" string="CRM Lead"/>
+                </tree>
+              </field>
+            </group>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </form>
+      </field>
+    </record>
+
+    <!-- View for creating/editing an eBook Downloadable File -->
+    <record model="ir.ui.view" id="ebook_library.downloadable_file_form">
+      <field name="name">ebook_library.downloadable_file.form</field>
+      <field name="model">ebook_library.downloadable_file</field>
+      <field name="arch" type="xml">
+        <form string="Downloadable eBook File">
+          <sheet>
+            <group>
+              <field name="file" string="File" widget="binary" filename="filename" content_type="content_type"/>
+              <field name="filename" string="Filename"/>
+              <field name="content_type" string="Content Type"/>
+            </group>
+          </sheet>
+          <div class="oe_chatter">
+            <field name="message_follower_ids" widget="mail_followers"/>
+            <field name="message_ids" widget="mail_thread"/>
+          </div>
+        </form>
+      </field>
+    </record>
+
+    <!-- View for managing eBook Leads -->
+    <record model="ir.ui.view" id="ebook_library.ebook_lead_tree">
+      <field name="name">ebook_library.ebook_lead.tree</field>
+      <field name="model">ebook_library.lead</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="email"/>
+          <field name="ebook_code"/>
+          <field name="ebook"/>
+        </tree>
+      </field>
+    </record>
+
+  </data>
+</odoo>
